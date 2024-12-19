@@ -1,0 +1,51 @@
+.profileContainer {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.profileContainer h1,
+.profileContainer h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.profileContainer p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.followSection {
+  margin-bottom: 30px;
+}
+
+.postsSection {
+  margin-top: 20px;
+}
+
+.followSection h2,
+.postsSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.followLink {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.followLink:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

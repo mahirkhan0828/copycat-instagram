@@ -1,0 +1,51 @@
+.postCard {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .postCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .postHeader h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .postHeader h2:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .postContent p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .postImage {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .postHeader small {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  

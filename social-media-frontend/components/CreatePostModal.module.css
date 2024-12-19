@@ -1,0 +1,68 @@
+.createPostButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .createPostButton:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modalContent h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    color: #000;
+  }
+  

@@ -1,0 +1,60 @@
+/* Main Profile Container */
+.profileContainer {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+  }
+  
+  /* Profile Header with Button */
+  .profileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profileHeader h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .postsContainer {
+    margin-top: 30px;
+  }
+  
+  .followButton,
+  .unfollowButton {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .followButton {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .followButton:hover {
+    background: #0056b3;
+  }
+  
+  .unfollowButton {
+    background: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  
+  .unfollowButton:hover {
+    background: #007bff;
+    color: white;
+  }
+  

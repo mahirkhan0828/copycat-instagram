@@ -1,0 +1,63 @@
+.homeContainer {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #555;
+}
+
+.featuresList {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.featuresList li {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ctaButtons {
+  margin-top: 30px;
+}
+
+.button,
+.buttonOutline {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.button {
+  background: #007bff;
+  color: white;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.buttonOutline {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.buttonOutline:hover {
+  background: #007bff;
+  color: white;
+}

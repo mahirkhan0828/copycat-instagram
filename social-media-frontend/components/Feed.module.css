@@ -1,0 +1,51 @@
+/* Container Layout */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .loadingMessage,
+  .errorMessage {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .postsList {
+    margin-top: 30px;
+  }
+  
+  .createPostForm {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .postCard {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .postCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
