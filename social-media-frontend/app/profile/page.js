@@ -7,7 +7,16 @@ import Link from 'next/link';
 import styles from './Profile.module.css';
 
 export default function ProfilePage() {
-  const user = JSON.parse(localStorage.getItem('user'));
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Safely access localStorage due to build failures when deploying
+      const storedUser = localStorage.getItem('user');
+      if (storedUser) setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
 
   const { data: posts, isLoading: postsLoading } = useQuery({
     queryKey: ['userPosts', user?.id],
