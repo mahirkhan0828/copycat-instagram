@@ -1,11 +1,13 @@
 'use client';
 
 import { createContext, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const router = useRouter();
 
   const login = (userData) => {
     setUser(userData);
@@ -15,6 +17,7 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     localStorage.removeItem('user');
+    router.push('/');
   };
 
   return (

@@ -35,7 +35,7 @@ export default function UserProfilePage() {
       {posts.length === 0 ? (
         <p>This user hasn't created any posts yet.</p>
       ) : (
-        posts.map((post) => <PostCard key={post.id} post={post} />)
+        posts.map((post) => <PostCard key={post.id} post={post}/>)
       )}
     </div>
   );

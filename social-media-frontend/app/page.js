@@ -11,7 +11,9 @@ export default function HomePage() {
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
-    if (storedUser) setUser(JSON.parse(storedUser));
+    if (storedUser && storedUser !== "undefined") {
+      setUser(JSON.parse(storedUser));
+    }
   }, [setUser]);
 
   if (user) {
@@ -24,19 +26,20 @@ export default function HomePage() {
       <p className={styles.description}>
         Copycat Instagram is a full-stack social media application built as a
         personal development project to explore and practice modern full-stack
-        web development. The app supports features such as user authentication,
-        post creation, likes, comments, following/unfollowing users, and
-        real-time updates through React Query.
+        web development. The app supports features such as creating and sharing
+        posts, following other users, viewing personalized feeds, checking
+        followers and following lists, and clicking on usernames to navigate
+        through profiles.
       </p>
       <p className={styles.description}>
         To try the app, use the following demo credentials:
       </p>
       <ul className={styles.featuresList}>
         <li>
-          <strong>Username: </strong>userA
+          <strong>Email: </strong>testuser@example.com
         </li>
         <li>
-          <strong>Password:</strong> passwordA
+          <strong>Password:</strong> password
         </li>
       </ul>
 

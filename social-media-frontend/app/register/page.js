@@ -16,6 +16,8 @@ export default function RegisterPage() {
       const response = await registerUser(data);
       localStorage.setItem('user', JSON.stringify(response.user));
       alert("Registration Successful!");
+      console.log(response);
+      console.log(localStorage);
       router.push('/');
     } catch (err) {
       setError("Registration Failed. Please try again.");

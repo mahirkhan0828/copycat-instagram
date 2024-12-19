@@ -73,7 +73,7 @@ export default function ProfilePage() {
         {postsLoading ? (
           <p>Loading posts...</p>
         ) : posts?.length > 0 ? (
-          posts.map((post) => <PostCard key={post.id} post={post} isCurrentUserPost={true}/>)
+          posts.map((post) => <PostCard key={post.id} post={post}/>)
         ) : (
           <p>You haven't created any posts yet.</p>
         )}

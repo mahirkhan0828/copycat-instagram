@@ -15,6 +15,8 @@ export default function LoginPage() {
     try {
       const response = await loginUser(data);
       localStorage.setItem('user', JSON.stringify(response.user));
+      console.log(response);
+      console.log(localStorage);
       alert("Login Successful!");
       router.push('/'); 
     } catch (err) {
