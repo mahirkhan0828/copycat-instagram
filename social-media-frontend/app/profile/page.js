@@ -5,6 +5,7 @@ import { fetchUserPosts, fetchFollowers, fetchFollowing } from '../../services/a
 import PostCard from '../../components/PostCard';
 import Link from 'next/link';
 import styles from './Profile.module.css';
+import { useState } from 'react';
 
 export default function ProfilePage() {
   const [user, setUser] = useState(null);
